@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "strict": true,                 // Enable strict type-checking options
+        "skipLibCheck": true,           // Skip type checking of declaration files
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ],
+        "types": ["vite/client"]
+    },
+
+    "include": [
+        "resources/js/**/*.vue",
+        "resources/js/**/*.ts",
+        "resources/js/**/*.d.ts"
+    ]
+}
