@@ -15,6 +15,7 @@ declare global {
     // Extending the DOM Window Interface
     interface Window {
         axios: AxiosStatic;
+        route: Function;
     }
 }
 
